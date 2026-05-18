@@ -1,0 +1,21 @@
+# Build output
+bin/
+obj/
+
+# Environment / local config
+.env
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+project.lock.json
+
+# Parsed interface (generated on build)
+ParsedInterface.json

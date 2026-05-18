@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDMapViewerCom</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+
+    <!-- Base styles -->
+    <link rel="stylesheet" href="../../css/styles.css">
+
+    <style>
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Control panel */
+        .map-controls {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .control-group {
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .control-btn {
+            display: block;
+            width: 100%;
+            padding: 8px 12px;
+            border: none;
+            background: white;
+            cursor: pointer;
+            font-size: 13px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+
+        .control-btn:last-child {
+            border-bottom: none;
+        }
+
+        .control-btn:hover {
+            background: #f0f0f0;
+        }
+
+        .control-btn.active {
+            background: #e3f2fd;
+            color: #1976d2;
+            font-weight: 600;
+        }
+
+        .measure-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .measure-btn.measuring {
+            background: #ffebee;
+            color: #c62828;
+        }
+
+        .measure-icon {
+            font-size: 16px;
+        }
+
+        /* Measurement display */
+        .measure-display {
+            padding: 8px 12px;
+            background: #fff3e0;
+            font-size: 12px;
+            display: none;
+        }
+
+        .measure-display.visible {
+            display: block;
+        }
+
+        .measure-total {
+            font-weight: 600;
+            color: #e65100;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <!-- Map Controls -->
+    <div class="map-controls">
+        <!-- Map Type Selector -->
+        <div class="control-group">
+            <button class="control-btn active" data-maptype="normal">Mapa</button>
+            <button class="control-btn" data-maptype="satellite">Satélite</button>
+            <button class="control-btn" data-maptype="terrain">Terreno</button>
+        </div>
+
+        <!-- Measure Tool -->
+        <div class="control-group">
+            <button class="control-btn measure-btn" id="measureBtn">
+                <span class="measure-icon">📏</span>
+                <span class="measure-text">Medir</span>
+            </button>
+            <div class="measure-display" id="measureDisplay">
+                <div>Distancia: <span class="measure-total" id="measureTotal">0 m</span></div>
+                <button class="control-btn" id="clearMeasure" style="padding: 4px 8px; font-size: 11px;">Limpiar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+
+    <!-- Control-specific JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity
+      name="SDMapViewerCom"
+      version="1.1.2.0"
+      processorArchitecture="x86"
+      type="win32"/>
+
+  <clrClass
+      clsid="{A0C856EF-B15E-4707-BE41-D180257FA383}"
+      progid="SDMapViewerCom.SDMapViewerComControl"
+      threadingModel="Apartment"
+      name="SDMapViewerCom.SDMapViewerComControl"
+      runtimeVersion="v4.0.30319">
+  </clrClass>
+
+  <file name="SDMapViewerCom.dll">
+     <typelib
+         tlbid="{2D25610F-95B8-43B6-98B0-9CBA6C74AB9A}"
+         version="1.0"
+         helpdir=""
+         resourceid="0"
+         flags="HASDISKIMAGE"/>
+  </file>
+</assembly>

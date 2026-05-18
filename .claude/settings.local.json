@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -ExecutionPolicy Bypass -Command \"& \\([Environment]::GetFolderPath\\(''ApplicationData''\\) + ''\\\\ClarionCOM\\\\scripts\\\\clarioncom-env.ps1''\\) home\")",
+      "Bash(powershell -ExecutionPolicy Bypass -Command \"& \\([Environment]::GetFolderPath\\(''ApplicationData''\\) + ''\\\\ClarionCOM\\\\scripts\\\\clarioncom-env.ps1''\\) templates\")",
+      "Bash(powershell -ExecutionPolicy Bypass -Command:*)",
+      "Bash(powershell -Command \"Get-ChildItem -Recurse ''C:\\\\Users\\\\SDigitales\\\\AppData\\\\Roaming\\\\ClarionCOM\\\\Templates\\\\WebView2\\\\'' | Select-Object FullName\")",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\SDigitales\\\\AppData\\\\Roaming\\\\ClarionCOM\\\\scripts\\\\clarioncom-env.ps1\":*)",
+      "Bash(\"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\MSBuild\\\\Current\\\\Bin\\\\MSBuild.exe\" \"D:\\\\Works_VS\\\\SDMapViewerCom\\\\SDMapViewerCom.csproj\" -p:Configuration=Release -restore)",
+      "Bash(cmd //c \"\"\"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\MSBuild\\\\Current\\\\Bin\\\\MSBuild.exe\"\" \"\"D:\\\\Works_VS\\\\SDMapViewerCom\\\\SDMapViewerCom.csproj\"\" -p:Configuration=Release -restore\")",
+      "Bash(powershell:*)",
+      "Bash(dir:*)",
+      "Bash(dotnet build:*)",
+      "Bash(\"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\18\\\\Community\\\\MSBuild\\\\Current\\\\Bin\\\\MSBuild.exe\" \"D:\\\\Works_VS\\\\SDMapViewerCom\\\\SDMapViewerCom.csproj\" -p:Configuration=Release -v:minimal)",
+      "Bash(copy \"D:\\\\Works_VS\\\\SDMapViewerCom\\\\Clarion\\\\accessory\\\\resources\\\\SDMapViewerCom.manifest\" \"D:\\\\Works\\\\GodoyC11\\\\SDMapViewerCom.MANIFEST\")",
+      "Bash(powershell.exe -NoProfile -Command \"Get-ChildItem $env:APPDATA\\\\ClarionCOM\\\\scripts\")",
+      "Bash(cmd.exe /c \"echo %APPDATA%\")",
+      "Bash(cmd.exe /c \"echo %APPDATA% && dir %APPDATA%\\\\ClarionCOM\\\\scripts\")",
+      "Bash(echo:*)",
+      "Bash(ls:*)",
+      "PowerShell(powershell -ExecutionPolicy Bypass -Command \"& \\([Environment]::GetFolderPath\\('ApplicationData'\\) + '\\\\ClarionCOM\\\\scripts\\\\clarioncom-env.ps1'\\) home\")",
+      "PowerShell(& \\([Environment]::GetFolderPath\\('ApplicationData'\\) + '\\\\ClarionCOM\\\\scripts\\\\increment-build-version.ps1'\\) increment 'D:\\\\Works_VS\\\\SDMapViewerCom\\\\SDMapViewerCom.csproj')",
+      "PowerShell(& 'C:\\\\Program Files\\\\Microsoft Visual Studio\\\\18\\\\Community\\\\MSBuild\\\\Current\\\\Bin\\\\MSBuild.exe' 'D:\\\\Works_VS\\\\SDMapViewerCom\\\\SDMapViewerCom.csproj' -restore -p:Configuration=Release -v:minimal 2>&1)"
+    ]
+  }
+}
