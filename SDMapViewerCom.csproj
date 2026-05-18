@@ -33,7 +33,7 @@
   <!-- NuGet Package References -->
   <ItemGroup>
     <!-- WebView2 Runtime for embedded Chromium browser control -->
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2535.41" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3595.46" />
 
     <!-- JSON serialization for JS interop -->
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
