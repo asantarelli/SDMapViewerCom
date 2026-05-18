@@ -1,4 +1,4 @@
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("SDMapViewerCom")]
@@ -23,5 +23,5 @@ using System.Runtime.InteropServices;
 // Events GUID:    1E6E5925-1AF0-4D7E-B63B-937D7103B03B (ISDMapViewerComControlEvents.cs)
 // Class GUID:     A0C856EF-B15E-4707-BE41-D180257FA383 (SDMapViewerComControl.cs)
 
-[assembly: AssemblyVersion("1.1.2.0")]
-[assembly: AssemblyFileVersion("1.1.2.0")]
+[assembly: AssemblyVersion("1.1.3.0")]
+[assembly: AssemblyFileVersion("1.1.3.0")]
