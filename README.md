@@ -251,9 +251,3 @@ Ver [CHANGELOG.md](CHANGELOG.md) para el historial completo de versiones.
 ## Licencia
 
 Este proyecto está bajo la licencia MIT. Ver [LICENSE](LICENSE) para más detalles.
-
-## ☕ ¿Te fue útil?
-
-Si esta herramienta te ahorró tiempo, podés invitarme un café:
-
-[![Donar con PayPal](https://www.paypalobjects.com/es_ES/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate/?business=informacion@sdigitales.com.ar)
